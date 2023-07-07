@@ -21,3 +21,26 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+var startDay = day.js().startOf("day").add(7, "hour");
+var currHour = day.js().format("H");
+var lastHour = 18;
+var timeStatus;
+var timeDesc = "";
+var currentTime = dayjs().format("D/MM/YYYY/HA");
+var hour = "";
+$("#currentDay").text(currentTime);
+
+function createSchedule() {
+    for (var hour = 9; hour < lastHour; hour++){
+      var displayTime = startDay.add(hour,"h").format("H");
+      console.log(timeDisplay);
+      var newEvent = localStorage.getItem('hour-$(hour)');
+      if (savedEvent) {
+        timeDesc = savedEvent;
+      } else if (currHour < hour) {
+        timeStatus = "present":
+      } else {
+        timeStatus = "future"
+      }
+    }
+}
