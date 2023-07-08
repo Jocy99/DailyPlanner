@@ -1,3 +1,6 @@
+var currDay = $('#currentDay')
+var timeBlocks = $('.time-block')
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -14,33 +17,20 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
-  //
+  var currTime = dayjs().format('H')
+  // the code below is our for loop to check the time
+  timeBlocks.each(function () {
+    var thisHour = parseInt($(this).attr('id').split('-')[1])
+    console.log(thisHour)
+    if (thisHour < currTime) {
+
+    } else (thisHour > currTime)
+  })
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
+  // Friday, July 7 2023
+  currDay.text(dayjs().format('dddd, MMMM D YYYY'))
 });
-var startDay = day.js().startOf("day").add(7, "hour");
-var currHour = day.js().format("H");
-var lastHour = 18;
-var timeStatus;
-var timeDesc = "";
-var currentTime = dayjs().format("D/MM/YYYY/HA");
-var hour = "";
-$("#currentDay").text(currentTime);
-
-function createSchedule() {
-    for (var hour = 9; hour < lastHour; hour++){
-      var displayTime = startDay.add(hour,"h").format("H");
-      console.log(timeDisplay);
-      var newEvent = localStorage.getItem('hour-$(hour)');
-      if (savedEvent) {
-        timeDesc = savedEvent;
-      } else if (currHour < hour) {
-        timeStatus = "present":
-      } else {
-        timeStatus = "future"
-      }
-    }
-}
