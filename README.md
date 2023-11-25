@@ -2,8 +2,8 @@
 
 The Daily Planner Website is a tool designed to help employees manage their time more efficiently. It provides a user-friendly interface for creating and organizing important tasks, making it easier to plan and prioritize work.
 Live website URL: https://jocy99.github.io/DailyPlanner/
-![Screenshot (219)](https://github.com/Jocy99/DailyPlanner/assets/133434768/e3f37408-f42e-4817-bb6a-f939831f0284)
 
+![Screenshot (219)](https://github.com/Jocy99/DailyPlanner/assets/133434768/0e2ddeca-4fd9-463b-a1c7-dfbce0401e0d)
 
 ## Features
 
